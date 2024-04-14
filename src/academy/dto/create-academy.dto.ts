@@ -1,21 +1,20 @@
-import { IsString, IsDate, IsInt, Min } from "class-validator";
+import { IsString, IsDate, IsInt, Min } from 'class-validator';
 
-export class CreateAcademyDto{
-    //se osven id
-    @IsString() 
-    readonly name: String;
+export class CreateAcademyDto {
+  
+  @IsString()
+  readonly name: string;
 
-    @IsString() 
-    readonly description: String;
+  @IsString()
+  readonly description: string;
 
-    @IsDate()
-    readonly startDate: Date;
-    
-    @IsDate()
-    readonly endDate: Date;
+  @IsDate()
+  readonly startDate: Date;
 
-    @IsInt()
-    @Min(0)
-    readonly price: number;
+  @IsDate()
+  readonly endDate: Date;
+
+  @IsInt()
+  @Min(0)
+  readonly price: number;
 }
-

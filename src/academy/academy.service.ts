@@ -1,54 +1,3 @@
-// import { Injectable } from '@nestjs/common';
-// import { CreateAcademyDto } from './dto/create-academy.dto';
-// import { AcademyDto } from './dto/academy.dto';
-// import { v4 as uuid} from 'uuid';
-// import { UpdateAcademyDto } from './dto/update-academy.dto';
-
-// @Injectable()
-// export class AcademyService {
-//     private _avcademies = [
-//        {id: "css1213"}
-//     ]
-
-//     create(createAcademyDto:CreateAcademyDto): AcademyDto {
-// const id = uuid();
-// const academy = {id, ...createAcademyDto};
-// this._avcademies.push(academy)
-// return academy
-//     }
-
-// findAll(name?:string): AcademyDto[] {
-//     if(name) {
-//         return this._avcademies.filter(academy => academy.name.toLowerCase().includes(name.toLocaleUpperCase()));
-//     }
-//     return this._avcademies
-// }
-
-// findOne(id:string): AcademyDto {
-//     return this._avcademies.find((academy) => academy.id=== id);
-// }
-
-// update(id:string, updateAcademyDto:UpdateAcademyDto):AcademyDto {
-//     const index =this._avcademies.findIndex(academy => academy.id === id)
-//     if(index !== -1) {
-//         this._avcademies[index] = {
-//             ...this._avcademies[index],
-//             ...updateAcademyDto
-//         }
-//         return this._avcademies[index]
-//     }
-//     throw new Error('Update operation failed')
-// }
-
-// remove(id:string): boolean {
-//     const index = this._avcademies.findIndex((academy) => academy.id === id);
-//     if(index !== -1) {
-//         this._avcademies.splice(index, 1);
-//         retrurn true
-//     }
-// }
-// return false
-// }
 
 import { Injectable } from '@nestjs/common';
 import { CreateAcademyDto } from './dto/create-academy.dto';
@@ -58,7 +7,7 @@ import { UpdateAcademyDto } from './dto/update-academy.dto';
 
 @Injectable()
 export class AcademyService {
-    private _academies: AcademyDto[] = [
+    private _academies = [
         { 
             id: "css1213", 
             name: "Sample Academy", 

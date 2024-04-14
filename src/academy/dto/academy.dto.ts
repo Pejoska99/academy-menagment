@@ -1,4 +1,4 @@
-import { IsString, IsDate, Min, IsInt } from "class-validator";
+import { IsString } from "class-validator";
 import { CreateAcademyDto } from "./create-academy.dto";
 
 export class AcademyDto extends CreateAcademyDto {
