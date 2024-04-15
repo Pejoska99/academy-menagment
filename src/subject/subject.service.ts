@@ -10,7 +10,7 @@ import { SubjectDto } from './dto/subject.dto';
 export class SubjectService {
   private _subjects = [
     {
-      id: 'eb97fd86-81f1-4d3b-88e6-5921c0a4e0f7',
+      id: 'css1213',
       name: 'AdvancedNodeJs',
       numberOfClasses: 15,
       difficulty: Difficulty.Hard,

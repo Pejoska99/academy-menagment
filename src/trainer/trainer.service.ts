@@ -8,7 +8,7 @@ import { v4 as uuid } from 'uuid'
 export class TrainerService {
   private _trainers = [{
     id: '1',
-    name: 'Bil Jane',
+    name: 'BilJane',
     age: 30,
     email: 'bil@jane.com',
     academyId: 'css1213'

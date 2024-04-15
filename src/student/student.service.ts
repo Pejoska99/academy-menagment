@@ -12,7 +12,7 @@ export class StudentService {
   name: 'Kristijan Pejoski',
   age: 20,
   email: 'kris@test.gmail',
-  academyId: "eb97fd86-81f1-4d3b-88e6-5921c0a4e0f7"
+  academyId: "css1213"
  }];
 
   create(createStudentDto: CreateStudentDto): StudentDto {
